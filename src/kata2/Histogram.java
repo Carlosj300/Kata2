@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package kata2;
 
 import static java.lang.Math.random;
@@ -13,8 +8,7 @@ import static java.lang.Math.random;
 import java.util.Random;
 
 /**
- *
- * @author carlo
+ * @author carlos
  */
 public class Histogram {
     private int[] data = new int[20]; 
