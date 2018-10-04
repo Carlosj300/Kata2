@@ -11,7 +11,7 @@ public class Kata2 {
 
     
     public static void main(String[] args) {
-        Histogram histogram = new Histogram()
+        Histogram histogram = new Histogram();
         
         
     }
