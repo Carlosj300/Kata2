@@ -18,19 +18,11 @@ public class Histogram {
     public Histogram(){
         fill();
         
-        for(int i = 0; i < data.length; i++){
-            if(map.containsKey(data[i])){
-                map.put(data[i], map.get(data[i]) +1);
-            } else{
-                map.put(data[i], 1);
-            }
-        }
-        
         if (!map.isEmpty()){
             for(Map.Entry<Integer, Integer> entry : map.entrySet()){
                 System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
             }
-        }
+        }            
     }
     
     private void fill(){
@@ -39,5 +31,9 @@ public class Histogram {
             System.out.print(data[i]+"    ");
         }
         System.out.println("");
+        
+        for (int key : data) {
+            map.put(key,map.containsKey(key) ? map.get(key)+1:1);
+        }
     }    
 }
