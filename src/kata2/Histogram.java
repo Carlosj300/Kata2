@@ -20,10 +20,9 @@ public class Histogram {
         fill();
         
         if (!map.isEmpty()){
-            Iterator<Map.Entry<Integer,Integer>> iterator = map.entrySet().iterator();
-            while(iterator.hasNext()){
-                Map.Entry<Integer, Integer> entry = iterator.next();
-                System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
+            for(Integer key : map.keySet()){
+                Integer value = map.get(key);
+                System.out.println("Key: " + key + " Value: " + value);
             }    
         }            
     }
